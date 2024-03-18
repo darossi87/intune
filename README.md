@@ -42,9 +42,7 @@ For Umbrella you will need the Core VPN even though you might just want umbrella
 
 Once done you will have the PKG for the Intune Install but you need to prep the OS for the app so it not prompting the user for admin login for Permission for the app.
 
-NEXT
-
-Prepping MacOS via intune for Cisco Secure Client
+NEXT (Prepping MacOS via intune for Cisco Secure Client)
 
 Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
 please view the link below and make sure it on the latest verison incase cisco changes something in this config it listed as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval"
@@ -80,7 +78,7 @@ Rule Value: DE8Y96K9QP
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
 
 
-LASTLY
+NEXT (DEPLOYING THE APP)
 
 Now add the Core and Dart to the Intune via PKG and Next through the app keeping the existing settings.
 
@@ -95,7 +93,8 @@ Leave these settings below alone do not touch them
 
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
 
-Lastly we do Umbrella
+Finaly we do Umbrella
+
 ![image](https://github.com/darossi87/intune/assets/45303117/016a52bf-a3ab-451c-8e72-95bb81ba6383)
 ![image](https://github.com/darossi87/intune/assets/45303117/42404266-23a3-41fa-8bb7-fbe2d568f6f9)
 
