@@ -22,7 +22,7 @@ While there also grab your Orginfo.json file while there
 
 Once you download it I used 7zip to extract the installer
 
-![cisco_7zip_Extraction](https://github.com/darossi87/intune/assets/45303117/b71d73d8-6488-4653-9188-772c48d29796)
+![image](https://github.com/darossi87/intune/assets/45303117/cc4f74a0-3710-49c4-ae3c-7ff3adeeb233)
 
 You should see something like this
 C:\Users\username\Downloads\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
