@@ -11,7 +11,7 @@ If you grabbed a predeploy file it will not work I noticed only the webdeploy(ak
 
 Once you download it I used 7zip to extract the installer
 
-![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/cisco_7zip_Extraction.png)
+![cisco_7zip_Extraction](https://github.com/darossi87/intune/assets/45303117/b71d73d8-6488-4653-9188-772c48d29796)
 
 You should see something like this
 C:\Users\username\Downloads\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
