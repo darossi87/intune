@@ -7,7 +7,7 @@ Firstly, as we utilize Cisco Umbrella, accessing the download client is only fea
 
 Prepping MacOS via intune for Cisco Secure Client
 Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
-*please view the link below and make sure it on the latest verison incase cisco changes something in this config* it listed as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval"
+please view the link below and make sure it on the latest verison incase cisco changes something in this config it listed as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval"
 https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secure-Client-5/admin/guide/b-cisco-secure-client-admin-guide-5-1/macos11-on-ac.html
 
 How to set the CiscoSecureClient.mobileconfig in intune
