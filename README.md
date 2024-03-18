@@ -3,7 +3,7 @@ How to make a customized install of Cisco Secure Client with Cisco Umbrella for 
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
 
-![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/Headend%20Deployment%20File%20Screenshot.png?raw=true)
+![image](https://github.com/darossi87/intune/assets/45303117/9f8464a4-f2e6-493a-b660-a68879a28833)
 
 The Headinstaller will download file named: cisco-secure-client-macos-5.1.2.42-webdeploy-k9.pkg
 
