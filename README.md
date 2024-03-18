@@ -1,12 +1,12 @@
-Using Intune to install of Cisco Secure Client with Umbrella for MacOS
+# Using Intune to install of Cisco Secure Client with Umbrella for MacOS
 How to make a customized install of Cisco Secure Client with Cisco Umbrella for MacOS
+
 
 THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
 
 AS OF WRITITING  3/18/24
 THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL WHICH WILL FORCE INSTALL THE APP
 
-STILL WORKING ON FIGURING OUT HOW TO HIDE THE VPN MODULE
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
 
@@ -42,10 +42,12 @@ For Umbrella you will need the Core VPN even though you might just want umbrella
 
 Once done you will have the PKG for the Intune Install but you need to prep the OS for the app so it not prompting the user for admin login for Permission for the app.
 
-NEXT (Prepping MacOS via intune for Cisco Secure Client)
+# Prepping MacOS via intune for Cisco Secure Client
 
 Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
 please view the link below and make sure it on the latest verison incase cisco changes something in this config it listed as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval"
+<br>
+<br>
 https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secure-Client-5/admin/guide/b-cisco-secure-client-admin-guide-5-1/macos11-on-ac.html
 
 How to set the CiscoSecureClient.mobileconfig in intune
@@ -78,13 +80,19 @@ Rule Value: DE8Y96K9QP
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
 
 
-NEXT (DEPLOYING THE APP)
+# DEPLOYING THE APP
 
-Now add the Core and Dart to the Intune via PKG and Next through the app keeping the existing settings.
+Now add the Cisco Secure Client Core VPN to the Intune via PKG
 
 ![image](https://github.com/darossi87/intune/assets/45303117/016a52bf-a3ab-451c-8e72-95bb81ba6383)
 ![image](https://github.com/darossi87/intune/assets/45303117/e4d3fd5e-7e48-42e7-b955-9628afec36b1)
-![image](https://github.com/darossi87/intune/assets/45303117/faffc7cf-9f01-439b-bd9b-7aadc1cf9a9b)
+
+**THIS STEP IS ONLY NEEDED IF YOU WANT TO HIDE THE VPN CLIENT**
+
+copy OrgfileMove.sh into Pre-Install Script. If not needed hit Next to skip
+
+![image](https://github.com/darossi87/intune/assets/45303117/37165e59-4157-4908-aec0-fe184e756fbb)
+
 
 Leave these settings below alone do not touch them
 
@@ -99,6 +107,7 @@ Finaly we do Umbrella
 ![image](https://github.com/darossi87/intune/assets/45303117/42404266-23a3-41fa-8bb7-fbe2d568f6f9)
 
 Now copy OrgfileMove.sh editing the URL of were your Orginfo.json is located and copy it into the Pre-Intall Script Area
+
 ![image](https://github.com/darossi87/intune/assets/45303117/b54474ff-ed55-4f48-948b-192cabcfd7ec)
 ![image](https://github.com/darossi87/intune/assets/45303117/8b53b2a2-481e-4b4b-81ef-cf8b50d3c7fb)
 
