@@ -26,19 +26,21 @@ Once you download it I used 7zip to extract the installer
 ![image](https://github.com/darossi87/intune/assets/45303117/cc4f74a0-3710-49c4-ae3c-7ff3adeeb233)
 
 You should see something like this
-C:\Users\username\Downloads\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
+cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
+
 Now you we will see each DMG of each app
+
 ![image](https://github.com/darossi87/intune/assets/45303117/c72ab80c-c19c-4549-b1fd-449d154e2b35)
 
 Now do the same steps on the DMG for each package you need.
-
-For Umbrella you will need the Core VPN even though you might just want umbrella. You still need to install the Core VPN because Umbrella client is dependant on it. I recommend Dart as well incase you need assistant from Cisco.
 
 ![image](https://github.com/darossi87/intune/assets/45303117/d54256be-74e9-4ca6-a7c8-6867bc1ab5b0)
 
 ![image](https://github.com/darossi87/intune/assets/45303117/1b597379-abd1-49e6-8881-dcdaa87f5b48)
 
-Now you have the Raw PKG that is needed
+For Umbrella you will need the Core VPN even though you might just want umbrella. You still need to install the Core VPN because Umbrella client is dependant on it. I recommend Dart as well incase you need assistant from Cisco.
+
+Once done you will have the PKG for the Intune Install but you need to prep the OS for the app so it not prompting the user for admin login for Permission for the app.
 
 NEXT
 
@@ -76,6 +78,9 @@ Rule Value: DE8Y96K9QP
 
 
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
+
+
+LASTLY
 
 Now add the Core and Dart to the Intune via PKG and Next through the app keeping the existing settings.
 
