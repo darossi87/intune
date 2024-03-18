@@ -5,6 +5,12 @@ Firstly, as we utilize Cisco Umbrella, accessing the download client is only fea
 
 ![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/Headend%20Deployment%20File%20Screenshot.png?raw=true)
 
+This is the file name the headend will download:
+cisco-secure-client-macos-5.1.2.42-webdeploy-k9.pkg
+
+Once you download it I used 7zip to extract the installer
+CiscoSecureConnect\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
+
 
 Prepping MacOS via intune for Cisco Secure Client
 Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
