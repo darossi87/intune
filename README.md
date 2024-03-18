@@ -1,6 +1,10 @@
 Using Intune to install of Cisco Secure Client with Umbrella for MacOS
 How to make a customized install of Cisco Secure Client with Cisco Umbrella for MacOS
 
+THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
+
+AS OF WRITITING THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL 3/18/24
+
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
 
 ![image](https://github.com/darossi87/intune/assets/45303117/9f8464a4-f2e6-493a-b660-a68879a28833)
@@ -8,6 +12,11 @@ Firstly, as we utilize Cisco Umbrella, accessing the download client is only fea
 The Headinstaller will download file named: cisco-secure-client-macos-5.1.2.42-webdeploy-k9.pkg
 
 If you grabbed a predeploy file it will not work I noticed only the webdeploy(aka Headend Deployment) file is the only one that can be extracted like this
+
+While there also grab your Orginfo.json file while there
+
+![image](https://github.com/darossi87/intune/assets/45303117/37a2a85a-4100-41c2-9f60-799386013ca5)
+
 
 Once you download it I used 7zip to extract the installer
 
@@ -19,6 +28,16 @@ Now you we will see each DMG of each app
 ![image](https://github.com/darossi87/intune/assets/45303117/c72ab80c-c19c-4549-b1fd-449d154e2b35)
 
 Now do the same steps on the DMG for each package you need.
+
+For Umbrella you will need the Core VPN even though you might just want umbrella. You still need to install the Core VPN because Umbrella client is dependant on it. I recommend Dart as well incase you need assistant from Cisco.
+
+![image](https://github.com/darossi87/intune/assets/45303117/d54256be-74e9-4ca6-a7c8-6867bc1ab5b0)
+
+![image](https://github.com/darossi87/intune/assets/45303117/1b597379-abd1-49e6-8881-dcdaa87f5b48)
+
+Now you have the Raw PKG that is needed
+
+NEXT
 
 Prepping MacOS via intune for Cisco Secure Client
 
@@ -36,9 +55,6 @@ On the Configration Setting Page Name your Custom Policy "Custom configuration p
 Then Select the folder icon and import the CiscoSecureClient.mobileconfig and hit next, 
 ![Intune Mobileconfig settings](https://github.com/darossi87/intune/assets/45303117/26148586-aed9-4a39-ba3f-f3385e41c48a)
 
-In Scopes and Assignments, select your desired user/device assignment and click Create. 
-
-
 
 
 Cisco Secure Client Changes Related to macOS 11 (And Later)
@@ -55,5 +71,32 @@ Rule Value: DE8Y96K9QP
 
 ![image](https://github.com/darossi87/intune/assets/45303117/5f45b827-9240-47f1-ae87-67be7b2d78c6)
 
+
+In Scopes and Assignments, select your desired user/device assignment and click Create. 
+
+Now add the Core and Dart to the Intune via PKG and Next through the app keeping the existing settings.
+
+![image](https://github.com/darossi87/intune/assets/45303117/016a52bf-a3ab-451c-8e72-95bb81ba6383)
+![image](https://github.com/darossi87/intune/assets/45303117/e4d3fd5e-7e48-42e7-b955-9628afec36b1)
+![image](https://github.com/darossi87/intune/assets/45303117/faffc7cf-9f01-439b-bd9b-7aadc1cf9a9b)
+
+Leave these settings below alone do not touch them
+
+![image](https://github.com/darossi87/intune/assets/45303117/8b53b2a2-481e-4b4b-81ef-cf8b50d3c7fb)
+![image](https://github.com/darossi87/intune/assets/45303117/4703c1b3-1d18-4f1c-8421-4533d9591976)
+
+In Scopes and Assignments, select your desired user/device assignment and click Create. 
+
+Lastly we do Umbrella
+![image](https://github.com/darossi87/intune/assets/45303117/016a52bf-a3ab-451c-8e72-95bb81ba6383)
+![image](https://github.com/darossi87/intune/assets/45303117/42404266-23a3-41fa-8bb7-fbe2d568f6f9)
+
+Now copy OrgfileMove.sh editing the URL of were your Orginfo.json is located
+![image](https://github.com/darossi87/intune/assets/45303117/b54474ff-ed55-4f48-948b-192cabcfd7ec)
+![image](https://github.com/darossi87/intune/assets/45303117/8b53b2a2-481e-4b4b-81ef-cf8b50d3c7fb)
+
+Leave these settings below alone do not touch them
+
+![image](https://github.com/darossi87/intune/assets/45303117/78439863-4dc1-4d6c-b446-e1510066bf0f)
 
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
