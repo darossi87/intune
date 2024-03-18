@@ -3,7 +3,9 @@ How to make a customized install of Cisco Secure Client with Cisco Umbrella for 
 
 THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
 
-AS OF WRITITING THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL WHICH WILL FORCE INSTALL THE APP 3/18/24
+AS OF WRITITING  3/18/24
+THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL WHICH WILL FORCE INSTALL THE APP
+STILL WORKING ON FIGURING OUT HOW TO HIDE THE VPN MODULE
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
 
@@ -100,3 +102,7 @@ Leave these settings below alone do not touch them
 ![image](https://github.com/darossi87/intune/assets/45303117/78439863-4dc1-4d6c-b446-e1510066bf0f)
 
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
+
+Once it all push to the Mac it will need a restart for Umbrella to fully work it might show umbrella working but it will not filter till restart.
+
+![image](https://github.com/darossi87/intune/assets/45303117/f8feb199-8a2a-4426-8026-f68df16cc958)
