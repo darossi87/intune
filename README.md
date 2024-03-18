@@ -3,7 +3,7 @@ How to make a customized install of Cisco Secure Client with Cisco Umbrella for 
 
 THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
 
-AS OF WRITITING THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL 3/18/24
+AS OF WRITITING THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL WHICH WILL FORCE INSTALL THE APP 3/18/24
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
 
