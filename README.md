@@ -56,4 +56,4 @@ Rule Value: DE8Y96K9QP
 ![image](https://github.com/darossi87/intune/assets/45303117/5f45b827-9240-47f1-ae87-67be7b2d78c6)
 
 
-In Scopes and Assignments, select your desired user/device assignment and clickCreate. 
+In Scopes and Assignments, select your desired user/device assignment and click Create. 
