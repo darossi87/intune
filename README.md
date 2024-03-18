@@ -16,11 +16,14 @@ browse to Devices --> macOS --> Configuration profiles --> Create --> New Policy
 
 Next Name the Policy I suggest "MacOS Cisco Secure Connect Mobileconfig" Then hit Next
 
-On the Configration Setting Page Name your Custom Policy "Custom configuration profile name" Then "Choose Device Channel" for your Deployment Channel.
+On the Configration Setting Page Name your Custom Policy "Custom configuration profile name" Then choose "Device Channel" for your Deployment Channel.
 
 Then Select the folder icon and import the CiscoSecureClient.mobileconfig and hit next, 
+![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/Intune%20Mobileconfig%20settings.png)
 
 In Scopes and Assignments, select your desired user/device assignment and clickCreate. 
+
+
 
 
 Cisco Secure Client Changes Related to macOS 11 (And Later)
