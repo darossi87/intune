@@ -18,6 +18,7 @@ C:\Users\username\Downloads\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\bina
 Now you we will see each DMG of each app
 ![image](https://github.com/darossi87/intune/assets/45303117/c72ab80c-c19c-4549-b1fd-449d154e2b35)
 
+Now do the same steps on the DMG for each package you need.
 
 Prepping MacOS via intune for Cisco Secure Client
 Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
