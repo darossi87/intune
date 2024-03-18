@@ -91,7 +91,7 @@ Lastly we do Umbrella
 ![image](https://github.com/darossi87/intune/assets/45303117/016a52bf-a3ab-451c-8e72-95bb81ba6383)
 ![image](https://github.com/darossi87/intune/assets/45303117/42404266-23a3-41fa-8bb7-fbe2d568f6f9)
 
-Now copy OrgfileMove.sh editing the URL of were your Orginfo.json is located
+Now copy OrgfileMove.sh editing the URL of were your Orginfo.json is located and copy it into the Pre-Intall Script Area
 ![image](https://github.com/darossi87/intune/assets/45303117/b54474ff-ed55-4f48-948b-192cabcfd7ec)
 ![image](https://github.com/darossi87/intune/assets/45303117/8b53b2a2-481e-4b4b-81ef-cf8b50d3c7fb)
 
