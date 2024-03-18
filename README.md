@@ -21,6 +21,7 @@ Now you we will see each DMG of each app
 Now do the same steps on the DMG for each package you need.
 
 Prepping MacOS via intune for Cisco Secure Client
+
 Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
 please view the link below and make sure it on the latest verison incase cisco changes something in this config it listed as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval"
 https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secure-Client-5/admin/guide/b-cisco-secure-client-admin-guide-5-1/macos11-on-ac.html
@@ -33,20 +34,26 @@ Next Name the Policy I suggest "MacOS Cisco Secure Connect Mobileconfig" Then hi
 On the Configration Setting Page Name your Custom Policy "Custom configuration profile name" Then choose "Device Channel" for your Deployment Channel.
 
 Then Select the folder icon and import the CiscoSecureClient.mobileconfig and hit next, 
-![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/Intune%20Mobileconfig%20settings.png)
+![Intune Mobileconfig settings](https://github.com/darossi87/intune/assets/45303117/26148586-aed9-4a39-ba3f-f3385e41c48a)
 
-In Scopes and Assignments, select your desired user/device assignment and clickCreate. 
+In Scopes and Assignments, select your desired user/device assignment and click Create. 
 
 
 
 
 Cisco Secure Client Changes Related to macOS 11 (And Later)
+
 Create --> New Policy --> Profile type: Settings catalog -->
 Name: ManagedLoginItems --> Add Settings --> search for Managed Login Items -> select Login > Service Management - Managed Login Items --> expand the rules at the bottom and select Comment, Rule Type, and Rule Value. 
- 
+
+![image](https://github.com/darossi87/intune/assets/45303117/6c0c9d03-e108-4451-bbc9-f58307eab2c9)
+
 Close the right side panel and click + Edit Instance and enter the following values, removing the last row for "Team Identifiers":
 Comment: Cisco Secure Client
 Rule Type: Team Identifier
 Rule Value: DE8Y96K9QP
+
+![image](https://github.com/darossi87/intune/assets/45303117/5f45b827-9240-47f1-ae87-67be7b2d78c6)
+
 
 In Scopes and Assignments, select your desired user/device assignment and clickCreate. 
