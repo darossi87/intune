@@ -5,11 +5,18 @@ Firstly, as we utilize Cisco Umbrella, accessing the download client is only fea
 
 ![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/Headend%20Deployment%20File%20Screenshot.png?raw=true)
 
-This is the file name the headend will download:
-cisco-secure-client-macos-5.1.2.42-webdeploy-k9.pkg
+The Headinstaller will download file named: cisco-secure-client-macos-5.1.2.42-webdeploy-k9.pkg
+
+If you grabbed a predeploy file it will not work I noticed only the webdeploy(aka Headend Deployment) file is the only one that can be extracted like this
 
 Once you download it I used 7zip to extract the installer
-CiscoSecureConnect\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
+
+![alt text](https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/cisco_7zip_Extraction.png)
+
+You should see something like this
+C:\Users\username\Downloads\cisco-secure-client-macos-5.1.2.42-webdeploy-k9\binaries
+Now you we will see each DMG of each app
+![image](https://github.com/darossi87/intune/assets/45303117/c72ab80c-c19c-4549-b1fd-449d154e2b35)
 
 
 Prepping MacOS via intune for Cisco Secure Client
