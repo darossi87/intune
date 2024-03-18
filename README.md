@@ -1,2 +1,3 @@
-# intune
-Welcome to my Intune coding page, which is publicly available to assist individuals with Intune app deployments, scripts, and other complex issues that I've encountered and believe should be documented to help others find solutions for their own challenges.
+# Using Intune to install of Cisco Secure Client with Umbrella for MacOS
+How to make a customized install of Cisco Secure Client with Cisco Umbrella for MacOS
+This is make it so it only install Cisco Secure Client and Umbrella and Dart
