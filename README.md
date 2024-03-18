@@ -5,6 +5,7 @@ THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
 
 AS OF WRITITING  3/18/24
 THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL WHICH WILL FORCE INSTALL THE APP
+
 STILL WORKING ON FIGURING OUT HOW TO HIDE THE VPN MODULE
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
