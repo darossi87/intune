@@ -77,6 +77,22 @@ Rule Value: DE8Y96K9QP
 
 In Scopes and Assignments, select your desired user/device assignment and click Create. 
 
+# Deploying the Cisco Umbrella Root Certificate:
+This step only applies to new deployments of Cisco Secure Client or devices that does not have the Cisco Umbrella Root Certificate deployed previously. If you're migrating over from the Umbrella Roaming Client or Cisco AnyConnect 4.10 client, and/or have deployed the Cisco Umbrella Root Certificate already in the past, you may skip this step. 
+ 
+1.	In your Umbrella dashboard, under Deployments --> Configuration --> Root
+Certificate, download the Cisco Umbrella Root Certificate. 
+2.	In Intune, on the far left menu, navigate to Devices --> macOS --> Configuration profiles --> Create --> New Policy --> Profile type: Templates --> Trusted certificate --> Create. 
+3.	Give it a unique name like "Cisco Umbrella Root Certificate". In Configuration settings, upload the root certificate downloaded from the previous step. 
+4.	In Assignments, select your desired user/device assignment and click Create.
+5.	Navigate back to the overview of your macOS devices and click Sync. Just like previously in Step 18, this allows the desired macOS device(s) to pick up the changes during the device's next check-in with Intune. 
+ 
+Verify:
+You may verify Cisco Secure Client with Umbrella module is working by either browsing to https://policy-debug.checkumbrella.com or by running the following command:
+
+dig txt debug.opendns.com
+
+Either output should contain unique and relevant information to your Umbrella organization such as your OrgID. 
 
 # DEPLOYING THE APP
 
@@ -118,3 +134,4 @@ In Scopes and Assignments, select your desired user/device assignment and click 
 Once it all push to the Mac it will need a restart for Umbrella to fully work it might show umbrella working but it will not filter till restart.
 
 ![image](https://github.com/darossi87/intune/assets/45303117/f8feb199-8a2a-4426-8026-f68df16cc958)
+
