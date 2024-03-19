@@ -4,8 +4,7 @@ How to make a customized install of Cisco Secure Client with Cisco Umbrella for 
 
 THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
 
-AS OF WRITITING  3/18/24
-THERE IS NO WAY TO MAKE PKG INSTALLER SHOW UP IN THE COMPANY PORTAL YOU CAN ONLY SET THEM TO REQUIRE INSTALL WHICH WILL FORCE INSTALL THE APP
+As of the current date, March 18, 2024, there isn't a method available to display a PKG installer within the company portal. The only option is to configure PKG installers to require installation, which effectively mandates the installation of the application without offering it for user selection in the company portal.
 
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
@@ -14,14 +13,14 @@ Firstly, as we utilize Cisco Umbrella, accessing the download client is only fea
 
 The Headinstaller will download file named: cisco-secure-client-macos-5.1.2.42-webdeploy-k9.pkg
 
-If you grabbed a predeploy file it will not work I noticed only the webdeploy(aka Headend Deployment) file is the only one that can be extracted like this
+If you've obtained a predeploy file, it won't function as expected. From my observations, only the webdeploy file (also known as Headend Deployment) is capable of being extracted in this manner.
 
-While there also grab your Orginfo.json file while there
+Also, remember to retrieve your Orginfo.json file during this process.
 
 ![image](https://github.com/darossi87/intune/assets/45303117/37a2a85a-4100-41c2-9f60-799386013ca5)
 
 
-Once you download it I used 7zip to extract the installer
+After downloading it, I utilized 7zip to extract the installer.
 
 ![image](https://github.com/darossi87/intune/assets/45303117/cc4f74a0-3710-49c4-ae3c-7ff3adeeb233)
 
@@ -38,14 +37,14 @@ Now do the same steps on the DMG for each package you need.
 
 ![image](https://github.com/darossi87/intune/assets/45303117/1b597379-abd1-49e6-8881-dcdaa87f5b48)
 
-For Umbrella you will need the Core VPN even though you might just want umbrella. You still need to install the Core VPN because Umbrella client is dependant on it. I recommend Dart as well incase you need assistant from Cisco.
 
-Once done you will have the PKG for the Intune Install but you need to prep the OS for the app so it not prompting the user for admin login for Permission for the app.
+To set up Umbrella, it's essential to install the Core VPN, even if your primary focus is on using Umbrella alone. This is because the Umbrella client relies on the Core VPN. Additionally, I suggest installing Dart from Cisco in case you require assistance.
+
+After installation, you'll have the PKG file for Intune installation. However, it's crucial to prepare the operating system to prevent prompting the user for admin login to grant permissions for the app.
 
 # Prepping MacOS via intune for Cisco Secure Client
 
-Using the mobileconfig file I have attach to this project allow you set almost all the system varabiles need in intune to get this done. At time of writing this can change over time. 
-please view the link below and make sure it on the latest verison incase cisco changes something in this config it listed as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval"
+The mobileconfig file provided with this project enables you to configure nearly all the necessary system variables required in Intune for this setup. Please ensure that you're using the latest version of the file from the link provided, as Cisco might update the configuration. It's labeled as "Sample MDM Configuration Profile for Cisco Secure Client System and Kernel Extension Approval."
 <br>
 <br>
 https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secure-Client-5/admin/guide/b-cisco-secure-client-admin-guide-5-1/macos11-on-ac.html
@@ -53,7 +52,7 @@ https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secur
 How to set the CiscoSecureClient.mobileconfig in intune
 browse to Devices --> macOS --> Configuration profiles --> Create --> New Policy --> Profile type: Templates --> Custom --> Create
 
-Next Name the Policy I suggest "MacOS Cisco Secure Connect Mobileconfig" Then hit Next
+Next, Name the Policy I suggest "MacOS Cisco Secure Connect Mobileconfig" Then hit Next
 
 On the Configration Setting Page Name your Custom Policy "Custom configuration profile name" Then choose "Device Channel" for your Deployment Channel.
 
