@@ -2,7 +2,7 @@
 How to make a customized install of Cisco Secure Client with Cisco Umbrella for MacOS
 
 
-THIS IS A UNOFFICAL GUIDE USE AT YOUR OWN RISK.
+THIS IS A **UNOFFICAL** GUIDE USE AT YOUR OWN RISK
 
 As of the current date, March 18, 2024, there isn't a method available to display a PKG installer within the company portal. The only option is to configure PKG installers to require installation, which effectively mandates the installation of the application without offering it for user selection in the company portal.
 
