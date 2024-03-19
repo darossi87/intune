@@ -1,11 +1,10 @@
 # Using Intune to install of Cisco Secure Client with Umbrella for MacOS
-How to make a customized install of Cisco Secure Client with Cisco Umbrella for MacOS
-
 
 THIS IS A **UNOFFICAL** GUIDE USE AT YOUR OWN RISK
 
 As of the current date, March 18, 2024, there isn't a method available to display a PKG installer within the company portal. The only option is to configure PKG installers to require installation, which effectively mandates the installation of the application without offering it for user selection in the company portal.
 
+Building a customized installation of Cisco Secure Client with Cisco Umbrella for macOS involves several steps. Here's a breakdown of the process:
 
 Firstly, as we utilize Cisco Umbrella, accessing the download client is only feasible through the Cisco Umbrella admin panel. The crucial element to obtain is the Headend Deployment Package. Without it, extracting the individual package files necessary for creating a customized installer with specific applications becomes impossible.
 
