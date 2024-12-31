@@ -14,7 +14,7 @@ The Headinstaller will download file named: cisco-secure-client-macos-5.1.2.42-w
 
 If you've obtained a predeploy file, it won't function as expected. From my observations, only the webdeploy file (also known as Headend Deployment) is capable of being extracted in this manner.
 
-Also, remember to retrieve your Orginfo.json file during this process.
+Also, remember to retrieve your Orginfo.json file if using Cisco Umbrella during this process. This is will be REQUIRED for OrgfileMove.sh script that move your Orginfo.json file
 
 ![image](https://github.com/darossi87/intune/assets/45303117/37a2a85a-4100-41c2-9f60-799386013ca5)
 
@@ -103,7 +103,11 @@ Now add the Cisco Secure Client Core VPN to the Intune via PKG
 
 **THIS STEP IS ONLY NEEDED IF YOU WANT TO HIDE THE VPN CLIENT**
 
-copy OrgfileMove.sh into Pre-Install Script. If not needed hit Next to skip
+Copy OrgfileMove.sh into Pre-Install Script required for Umbrella. Script is link below.  If you're not using Umbrella you can Skipt this step.
+*This moves your license file to the licese file location also you must edit the script for it work. 
+
+https://github.com/darossi87/intune/blob/Cisco-Secure-Client-With-Umbrella-MacOS/OrgfileMove.sh
+
 
 ![image](https://github.com/darossi87/intune/assets/45303117/37165e59-4157-4908-aec0-fe184e756fbb)
 
