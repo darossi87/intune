@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# URL of your ORG file. Change URL_HERE to where the file will be hosted. I recommend hosting the file on a Webpage or Azure Blob
+# Change URL_HERE to where the Org file will be hosted. The file name should be "Orginfo.json" I recommend hosting the file on a Webpage or Azure Blob
 file_url="URL_HERE"
 
 # Destination directory
