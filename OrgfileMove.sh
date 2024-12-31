@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# URL of the file to download
+# URL of your ORG file. Change URL_HERE to where the file will be hosted. I recommend hosting the file on a Webpage or Azure Blob
 file_url="URL_HERE"
 
 # Destination directory
